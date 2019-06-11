@@ -1113,7 +1113,6 @@ static int kill_one_process(struct proc* procp) {
 
     ALOGI("Kill '%s' (%d), uid %d, oom_adj %d to free %ldkB",
         taskname, pid, uid, procp->oomadj, tasksize * page_k);
-    pid_remove(pid);
 
     TRACE_KILL_END();
 
